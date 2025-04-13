@@ -1,30 +1,49 @@
-.App {
+body {
+  margin: 0;
+  background: #f4f6f8;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 40px auto;
   text-align: center;
   padding: 20px;
-  font-family: sans-serif;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  margin-left: 400px;
 }
 
 h1 {
   margin-bottom: 20px;
+  color: #333;
 }
 
-.buttons {
-  margin-bottom: 20px;
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+input, select, button {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
 }
 
 button {
-  margin: 0 10px;
-  padding: 10px 20px;
-  font-weight: bold;
-  cursor: pointer;
-  border: none;
-  background-color: #333;
+  background: #333;
   color: white;
-  border-radius: 5px;
+  cursor: pointer;
 }
 
 button:hover {
-  background-color: #555;
+  background: #555;
 }
 
 .array-container {
@@ -32,18 +51,24 @@ button:hover {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  padding: 20px;
+  margin-top: 20px;
 }
 
 .array-value {
   width: 40px;
   height: 40px;
+  background: #009688;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: teal;
-  color: white;
+  border-radius: 8px;
   font-weight: bold;
-  border-radius: 6px;
   transition: background-color 0.3s ease;
+}
+
+.info {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #555;
 }
